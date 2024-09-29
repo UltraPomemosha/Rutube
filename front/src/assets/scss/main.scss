@@ -1,0 +1,59 @@
+@import './global';
+
+:root {
+  --base-fill: rgba(7, 21, 30, 1);
+  --second-fill: rgba(16, 42, 58, 1);
+
+  --base-white-color: rgba(255, 255, 255, 1);
+
+  --base-text-color: var(--base-white-color);
+  --second-text-color: rgba(255, 255, 255, 0.5);
+  --third-text-color: rgba(245, 245, 245, 1);
+
+  --accent-red-color: rgba(242, 19, 63, 1);
+  --accent-gray-color: rgba(255, 255, 255, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  margin-inline: 0;
+  margin-block: 0;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+
+  @media screen and (width <= $bp-890) {
+    font-size: 14px;
+  }
+
+  @media screen and (width <= $bp-590) {
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: 0;
+  border: 0;
+}
+
+a, button {
+  cursor: pointer;
+}
